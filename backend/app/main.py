@@ -18,7 +18,18 @@ class Request(BaseModel):
     context: str = "India"
 
 app = FastAPI(title="MindWell Policy Advisor API")
-app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:5173","http://127.0.0.1:5173"], allow_methods=["*"], allow_headers=["*"])
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "https://mindwell-policy-advisor.vercel.app",
+    ],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 @app.get("/api/health")
 def health():
