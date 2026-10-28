@@ -7,6 +7,7 @@ The project was developed as part of the **Advanced AI Core Lab — Agentic AI t
 
 > **Important distinction:** The project draws philosophical inspiration from Swami Bhoomananda Tirtha's article *“Let Mind Think And You Simply Be”*. The article informs the general theme of observing thoughts and approaching mental wellbeing thoughtfully. It is not treated as scientific evidence that a particular mental-health intervention is effective. Policy recommendations are informed by the project's curated public-health sources and should be independently verified.
 
+Deployment: https://mindwell-policy-advisor.vercel.app/
 ---
 
 ## Table of Contents
