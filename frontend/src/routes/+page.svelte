@@ -24,7 +24,7 @@
     renderedAnswer = '';
 
     try {
-      const r = await fetch('http://127.0.0.1:8000/api/policy', {
+      const r = await fetch('https://mindwell-policy-advisor.onrender.com/api/policy', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
