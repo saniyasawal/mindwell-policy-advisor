@@ -98,7 +98,7 @@ The system does not promote a religious practice or assume that a philosophical 
 | Configuration | `python-dotenv` | Loads environment variables from a local `.env` file |
 | Evidence storage | Python catalogue | Stores predefined source metadata, summaries and caveats |
 
-The exact model is selected through the `GROQ_MODEL` environment variable. The project should not be assumed to use a particular model unless that model is configured in the local environment.
+The exact model is selected through the `GROQ_MODEL` environment variable. 
 
 ## System Architecture
 
@@ -481,16 +481,11 @@ The design emphasises the following principles:
 
 ## Limitations
 
-1. **Small evidence catalogue:** The application currently uses five predefined source entries.
-2. **No live web retrieval:** It cannot discover new sources or automatically check whether existing guidance has changed.
-3. **Basic keyword matching:** Retrieval is based on word overlap rather than semantic similarity.
-4. **Limited source metadata:** Summaries are concise catalogue entries rather than complete extracts from the publications.
-5. **Potential hallucinations:** The LLM may still produce unsupported statements or misrepresent information.
-6. **No persistent conversational memory:** The backend does not explicitly store conversation history across separate requests.
-7. **No local impact estimates:** The catalogue does not provide a validated budget or estimate of intervention effectiveness for a particular institution.
-8. **Limited evaluation:** The prototype does not yet include a formal benchmark measuring factual accuracy, retrieval relevance or policy quality.
-9. **Source attribution limitation:** The API returns a predefined list of source links rather than a verified per-report retrieval record.
-10. **Not a clinical tool:** The application has not been validated for diagnosis, treatment or clinical decision-making.
+1. **No live web retrieval:** It cannot discover new sources or automatically check whether existing guidance has changed.
+2. **Basic keyword matching:** Retrieval is based on word overlap rather than semantic similarity.
+3. **No persistent conversational memory:** The backend does not explicitly store conversation history across separate requests.
+4. **No local impact estimates:** The catalogue does not provide a validated budget or estimate of intervention effectiveness for a particular institution.
+5. **Not a clinical tool:** The application has not been validated for diagnosis, treatment or clinical decision-making.
 
 ## Future Improvements
 
